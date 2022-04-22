@@ -16,7 +16,7 @@ const { firstName, lastName, hairColor } = this.props;
       <h2> {lastName}, {firstName}</h2>
       <p>Age: {this.state.addYear} </p>
       <p>Hair Color: {hairColor} </p>
-      <button className="birthday" onClick={() => this.setState({ addYear: this.state.addYear + 1})}>  Happy Birthday </button>
+      <button className="birthday" onClick={() => this.setState({ addYear: this.state.addYear + 1})}>  Happy Birthday { firstName } { lastName }! </button>
     </div>
   );
  }
